@@ -24,6 +24,10 @@ Run this every time they bring you something to build or change:
 
 Work one decision at a time. If other questions surface, note them and come back. Depth on one beats breadth on five.
 
+## Starting mid-project?
+
+Most of the time you are not at day one. Before running the loop on an existing project, orient first: understand what is already built, what decisions were already made and what constraints exist. In Claude Code, read the relevant code before suggesting anything. Then treat the unit as the next change, not the whole project: find the stage that change is in (a fix is Build, "should we add this at all" is Shape, "nobody is using what we shipped" is Launch) and run the loop on that one change. Reach for 2.2.3 (changing a system you do not fully understand), the scope ideas (1.3.2, 2.3.2) and the whole Launch stage.
+
 ## What sharp means
 
 A decision is sharp when two people would build the same thing from it. To get there, the decision has to say, in plain words: who it is for, what result it creates and what it deliberately does not do. Anything vague gets pinned down. "Users want it faster" is not sharp. "A solo operator cancelling a forgotten subscription gets it done in under 30 seconds without reading help text" is sharp.
