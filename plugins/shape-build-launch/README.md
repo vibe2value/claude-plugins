@@ -18,6 +18,22 @@ The skill runs a simple loop on whatever you are building:
 4. Only then build.
 5. Repeat for the next decision.
 
+## What is included
+
+All 27 ideas and their exact Sharpen prompts are bundled with the skill, grouped by stage:
+
+```
+skills/guide/
+├── SKILL.md                 the loop, the Sharpen template, worked examples
+└── reference/
+    ├── shape.md             the 9 Shape ideas, each with its exact Sharpen prompt
+    ├── build.md             the 9 Build ideas
+    ├── launch.md            the 9 Launch ideas
+    └── manifest.json        source and a content hash per idea
+```
+
+The reference files are generated from [vibe2value.com](https://vibe2value.com), the single source of truth, so the prompts here match what is published on the site. `manifest.json` records each idea's source slug, last-updated date and a content hash, so alignment can be checked rather than assumed.
+
 ## More
 
-The full framework, all 27 ideas and the exact Sharpen prompt for each live at [vibe2value.com](https://vibe2value.com). The machine-readable index is at [vibe2value.com/llms.txt](https://vibe2value.com/llms.txt) and the same skill in paste-anywhere form is at [vibe2value.com/skill.txt](https://vibe2value.com/skill.txt).
+For the worked examples in full, the diagrams, and a free 1:1 working session to apply this to what you are building, see [vibe2value.com](https://vibe2value.com). The machine-readable index is at [vibe2value.com/llms.txt](https://vibe2value.com/llms.txt) and the same skill in paste-anywhere form is at [vibe2value.com/skill.txt](https://vibe2value.com/skill.txt).

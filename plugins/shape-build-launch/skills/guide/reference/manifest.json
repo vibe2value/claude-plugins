@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-06-21T20:46:23.308Z",
+  "source": "https://vibe2value.com",
+  "count": 27,
+  "bundle_hash": "d64154af83b14327",
+  "ideas": [
+    {
+      "id": "1.1.1",
+      "stage": "shape",
+      "title": "If You Can't Name the User, You're Guessing What They Want",
+      "slug": "if-you-cant-name-the-user-youre-guessing",
+      "ghost_id": "695ceb70e814e900012fda47",
+      "updated_at": "2026-06-19T18:01:30.000Z",
+      "hash": "e59740cea20dd06d"
+    },
+    {
+      "id": "1.1.2",
+      "stage": "shape",
+      "title": "Describe the Pain Without Mentioning the Solution",
+      "slug": "describe-the-pain-without-mentioning-the-solution",
+      "ghost_id": "695cee99e814e900012fda75",
+      "updated_at": "2026-06-19T18:01:30.000Z",
+      "hash": "7e67488561c3d91c"
+    },
+    {
+      "id": "1.1.3",
+      "stage": "shape",
+      "title": "The One-Line Promise That Keeps Your Build Honest Throughout",
+      "slug": "the-one-line-promise-that-keeps-you-honest",
+      "ghost_id": "695cf0d1e814e900012fda9e",
+      "updated_at": "2026-06-19T18:01:29.000Z",
+      "hash": "8def8039b36cfab8"
+    },
+    {
+      "id": "1.2.1",
+      "stage": "shape",
+      "title": "Can You Explain This in 30 Seconds Without Mentioning the Tech?",
+      "slug": "can-you-explain-this-in-30-seconds",
+      "ghost_id": "695cf3b1e814e900012fdabe",
+      "updated_at": "2026-06-19T18:01:29.000Z",
+      "hash": "0c105a09f85c4c39"
+    },
+    {
+      "id": "1.2.2",
+      "stage": "shape",
+      "title": "What Does \"Success\" Actually Mean for the First Version You Ship?",
+      "slug": "what-does-success-mean-for-version-one",
+      "ghost_id": "695cf605e814e900012fdadc",
+      "updated_at": "2026-06-19T18:01:28.000Z",
+      "hash": "eae51bae518bba8e"
+    },
+    {
+      "id": "1.2.3",
+      "stage": "shape",
+      "title": "The Risks You're Avoiding Naming Are the Ones That Bite You",
+      "slug": "the-risks-youre-avoiding-naming",
+      "ghost_id": "695cf936e814e900012fdaf8",
+      "updated_at": "2026-06-19T18:01:27.000Z",
+      "hash": "ce5830d9fcce852a"
+    },
+    {
+      "id": "1.3.1",
+      "stage": "shape",
+      "title": "The One Outcome That Makes This Build Worth Doing in the First Place",
+      "slug": "the-one-outcome-that-makes-this-worth-doing",
+      "ghost_id": "695cfa0fe814e900012fdb17",
+      "updated_at": "2026-06-19T18:01:27.000Z",
+      "hash": "4b2f707ca268d250"
+    },
+    {
+      "id": "1.3.2",
+      "stage": "shape",
+      "title": "What This Will Not Do (On Purpose) Is Half the Decision",
+      "slug": "what-this-will-not-do-on-purpose",
+      "ghost_id": "695cfafde814e900012fdb33",
+      "updated_at": "2026-06-19T18:01:26.000Z",
+      "hash": "de0a8d477c10da20"
+    },
+    {
+      "id": "1.3.3",
+      "stage": "shape",
+      "title": "Describe One Main Path First, Then Ignore Everything Else",
+      "slug": "describe-one-main-path-then-ignore-the-rest",
+      "ghost_id": "695cfb93e814e900012fdb52",
+      "updated_at": "2026-06-19T18:01:26.000Z",
+      "hash": "b31fe6a966016c65"
+    },
+    {
+      "id": "2.1.1",
+      "stage": "build",
+      "title": "The Only Path Your Prototype Actually Needs to Walk",
+      "slug": "the-only-path-your-prototype-needs",
+      "ghost_id": "695ecc71bbcd510001abcf04",
+      "updated_at": "2026-06-19T18:01:25.000Z",
+      "hash": "6a3946ba912cbc01"
+    },
+    {
+      "id": "2.1.2",
+      "stage": "build",
+      "title": "Where the User First Feels Value Is Where to Start Building",
+      "slug": "where-the-user-first-feels-value",
+      "ghost_id": "695ecd83bbcd510001abcf25",
+      "updated_at": "2026-06-19T18:01:24.000Z",
+      "hash": "1b376b40127ed34a"
+    },
+    {
+      "id": "2.1.3",
+      "stage": "build",
+      "title": "What This Build Is Meant to Teach You, Not Just to Ship",
+      "slug": "what-this-build-is-meant-to-teach-you",
+      "ghost_id": "695ece78bbcd510001abcf45",
+      "updated_at": "2026-06-19T18:01:24.000Z",
+      "hash": "ce523efe51d3c9af"
+    },
+    {
+      "id": "2.2.1",
+      "stage": "build",
+      "title": "The Routine Work Checklist Nobody Talks About",
+      "slug": "the-routine-work-checklist-nobody-talks-about",
+      "ghost_id": "695ed631bbcd510001abcf63",
+      "updated_at": "2026-06-19T18:01:23.000Z",
+      "hash": "3ab6ad62c3ad6df6"
+    },
+    {
+      "id": "2.2.2",
+      "stage": "build",
+      "title": "Buy vs Build Is a Strategy Choice, Not an Engineering One",
+      "slug": "buy-vs-build-is-a-strategy-choice",
+      "ghost_id": "695ed721bbcd510001abcf83",
+      "updated_at": "2026-06-19T18:01:22.000Z",
+      "hash": "b9c7a92f080f1e99"
+    },
+    {
+      "id": "2.2.3",
+      "stage": "build",
+      "title": "Understanding the Shape of the System Before You Change It",
+      "slug": "understanding-the-shape-of-the-system",
+      "ghost_id": "695ed830bbcd510001abcfa6",
+      "updated_at": "2026-06-19T18:01:22.000Z",
+      "hash": "e0c6c882556e4a49"
+    },
+    {
+      "id": "2.3.1",
+      "stage": "build",
+      "title": "Where the Real Differentiation Actually Lives in Your Build",
+      "slug": "where-the-real-differentiation-actually-lives",
+      "ghost_id": "695ed9e0bbcd510001abcfc3",
+      "updated_at": "2026-06-19T18:01:21.000Z",
+      "hash": "8e80b5f4da85d11c"
+    },
+    {
+      "id": "2.3.2",
+      "stage": "build",
+      "title": "Why Cutting Features Is a Design Skill Most Builders Skip",
+      "slug": "why-cutting-features-is-a-design-skill-in-ai-assisted-software-development",
+      "ghost_id": "695ee8bdf68fad00019bf0cd",
+      "updated_at": "2026-06-19T18:01:21.000Z",
+      "hash": "d37b2ce2a1cc2b04"
+    },
+    {
+      "id": "2.3.3",
+      "stage": "build",
+      "title": "The One Metric That Proves This Works for Real Users",
+      "slug": "the-one-metric-that-proves-this-works",
+      "ghost_id": "695eec2af68fad00019bf0f3",
+      "updated_at": "2026-06-19T18:01:20.000Z",
+      "hash": "68a6d4fdf8454262"
+    },
+    {
+      "id": "3.1.1",
+      "stage": "launch",
+      "title": "Why Sharing Early Creates the Learning Your Build Needs",
+      "slug": "why-sharing-early-creates-learning",
+      "ghost_id": "6960400ece26cd00013b4de4",
+      "updated_at": "2026-06-19T18:01:20.000Z",
+      "hash": "e230fabedacde194"
+    },
+    {
+      "id": "3.1.2",
+      "stage": "launch",
+      "title": "Ask for Signals, Not Opinions, From the People You Trust",
+      "slug": "ask-for-signals-not-opinions",
+      "ghost_id": "696040d9ce26cd00013b4e03",
+      "updated_at": "2026-06-19T18:01:19.000Z",
+      "hash": "9c789a48fc019675"
+    },
+    {
+      "id": "3.1.3",
+      "stage": "launch",
+      "title": "Decide in Advance What Would Change Your Mind",
+      "slug": "decide-in-advance-what-would-change-your-mind",
+      "ghost_id": "696041c3ce26cd00013b4e1f",
+      "updated_at": "2026-06-19T18:01:18.000Z",
+      "hash": "a26660438e079321"
+    },
+    {
+      "id": "3.2.1",
+      "stage": "launch",
+      "title": "The Difference Between Learning and Being Stuck",
+      "slug": "the-difference-between-learning-and-being-stuck",
+      "ghost_id": "6960425fce26cd00013b4e3c",
+      "updated_at": "2026-06-19T18:01:18.000Z",
+      "hash": "69e88f7999aec368"
+    },
+    {
+      "id": "3.2.2",
+      "stage": "launch",
+      "title": "Explain Your Decisions Before Asking for Review",
+      "slug": "explain-your-decisions-before-asking-for-review",
+      "ghost_id": "69604359ce26cd00013b4e5b",
+      "updated_at": "2026-06-19T18:01:17.000Z",
+      "hash": "19a8827b576751a4"
+    },
+    {
+      "id": "3.2.3",
+      "stage": "launch",
+      "title": "Iteration Should Increase Value, Not Just Add Surface Area",
+      "slug": "iteration-should-increase-value",
+      "ghost_id": "69604437ce26cd00013b4e7b",
+      "updated_at": "2026-06-19T18:01:16.000Z",
+      "hash": "ebf6191a028f432d"
+    },
+    {
+      "id": "3.3.1",
+      "stage": "launch",
+      "title": "What \"Ready\" Actually Means Once Real Users Are Looking",
+      "slug": "what-ready-actually-means",
+      "ghost_id": "696044f3ce26cd00013b4e9d",
+      "updated_at": "2026-06-19T18:01:16.000Z",
+      "hash": "842eecf4fda48ab6"
+    },
+    {
+      "id": "3.3.2",
+      "stage": "launch",
+      "title": "Name the Risks Yourself Before Users Find Them in Production",
+      "slug": "name-the-risks-before-users-find-them",
+      "ghost_id": "696045a4ce26cd00013b4ebe",
+      "updated_at": "2026-06-19T18:01:15.000Z",
+      "hash": "c42b2bc3857df012"
+    },
+    {
+      "id": "3.3.3",
+      "stage": "launch",
+      "title": "Are You Comfortable Putting Your Name on This Build?",
+      "slug": "are-you-comfortable-putting-your-name-on-this",
+      "ghost_id": "6960462dce26cd00013b4edb",
+      "updated_at": "2026-06-19T18:01:15.000Z",
+      "hash": "8ed6687be36dd740"
+    }
+  ]
+}

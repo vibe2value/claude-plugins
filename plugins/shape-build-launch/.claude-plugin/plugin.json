@@ -1,7 +1,7 @@
 {
   "name": "shape-build-launch",
   "description": "Guide building software with AI through the shape+build+launch framework: decide what to make (Shape), build it (Build), put it in front of people (Launch). Make each decision sharp before writing code.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "vibe2value"
   },
