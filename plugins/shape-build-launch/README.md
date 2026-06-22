@@ -6,9 +6,13 @@ The hard part of building with AI is no longer the code. It is judgement: knowin
 
 ## Use
 
+Once installed, the skill surfaces on its own when Claude judges you are working through a build decision (Claude Code loads its description at startup and pulls in the full skill when your request matches). Auto-surfacing is a per-message judgement, not a guarantee, so to apply it reliably to a piece of work, invoke it directly:
+
 ```
 /shape-build-launch:guide
 ```
+
+You can also just say "use the shape-build-launch skill", or add a line to your project's `CLAUDE.md` so it stays in play across a whole session.
 
 The skill runs a simple loop on whatever you are building:
 
