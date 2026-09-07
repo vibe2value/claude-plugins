@@ -1,0 +1,14 @@
+{
+  "name": "vibe2value",
+  "owner": {
+    "name": "vibe2value"
+  },
+  "description": "Claude plugins from vibe2value. Build with AI and trust what you make.",
+  "plugins": [
+    {
+      "name": "vibe2value",
+      "source": "./plugins/vibe2value",
+      "description": "Guide building software with AI through the shape+build+launch+run+close framework: make each decision sharp before writing code."
+    }
+  ]
+}
