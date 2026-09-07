@@ -24,7 +24,7 @@ The skill runs a simple loop on whatever you are building:
 
 ## What is included
 
-All 33 ideas and their exact Sharpen prompts are bundled with the skill, grouped by stage:
+All 35 ideas and their exact Sharpen prompts are bundled with the skill, grouped by stage:
 
 ```
 skills/guide/
@@ -41,4 +41,4 @@ The reference files are generated from [vibe2value.com](https://vibe2value.com),
 
 ## More
 
-For the diagrams and a free 1:1 working session to apply this to what you are building, see [vibe2value.com](https://vibe2value.com). The machine-readable index is at [vibe2value.com/llms.txt](https://vibe2value.com/llms.txt) and the same skill in paste-anywhere form is at [vibe2value.com/skill.txt](https://vibe2value.com/skill.txt).
+For the diagrams and the full write-up of each idea, see [vibe2value.com](https://vibe2value.com). The machine-readable index is at [vibe2value.com/llms.txt](https://vibe2value.com/llms.txt) and the same skill in paste-anywhere form is at [vibe2value.com/skill.txt](https://vibe2value.com/skill.txt).
