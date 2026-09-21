@@ -1,11 +1,11 @@
 ---
 name: log
-description: Record the reason behind decisions made while building, appending them to DECISIONS.md at the project root. Use whenever a real choice gets made while building or changing software — a library or service picked over another, an approach taken, scope cut, a constraint accepted, a default overridden — so the reasoning survives the session it happened in.
+description: Record the reason behind decisions made while building, appending them to DECISIONS.md at the project root. Use whenever a real choice gets made while building or changing software, such as a library or service picked over another, an approach taken, scope cut, a constraint accepted or a default overridden, so the reasoning survives the session it happened in.
 ---
 
 # Decision log
 
-Writing the code is cheap now. The reasoning behind it is not, and it is the part that evaporates. A week later the code is still there and nobody remembers why it is like that — including the person who asked for it.
+Writing the code is cheap now. The reasoning behind it is not, and it is the part that evaporates. A week later the code is still there and nobody remembers why it is like that, including the person who asked for it.
 
 Your job is to catch the reasoning as it happens and write it down, without turning it into work for the person you are helping.
 
@@ -40,7 +40,7 @@ Only when there is no repository anywhere above the work does the working direct
 
 ⛔ Do not ask the person which project to use. Working it out is your job, and a question at the start of a session is a setup step wearing a disguise. If the answer is genuinely ambiguous, pick the nearest repository, say so in the notice below, and let them correct you.
 
-Append in time order, newest at the bottom. Do not reformat, reorder or rewrite earlier entries — this is a log, not a document.
+Append in time order, newest at the bottom. Do not reformat, reorder or rewrite earlier entries. This is a log, not a document.
 
 Plain markdown on purpose: it diffs in git, greps from the terminal and reads without a tool.
 
@@ -79,18 +79,23 @@ That is the whole confirmation. It exists because the log never asks to be trigg
 Four lines. Keep it this short.
 
 ```markdown
-## 2026-09-21 — Deck keys use the Ghost member id
+## 2026-09-21: Deck keys use the Ghost member id
 **Chose:** key every deck on the Ghost `member.id`
 **Over:** a slug built from the client's name
-**Why:** names change and ids do not, so a rename would silently orphan every deck — stated
+**Why:** names change and ids do not, so a rename would silently orphan every deck
+**Source:** stated
 ```
 
-- **Chose** — what is now true.
-- **Over** — the alternative that lost. If there genuinely was only one real option, write `Over: nothing, it was the only route` and say why in the reason. That is still worth knowing later.
-- **Why** — the reason, in plain words, in their words where you have them.
-- The last word on the **Why** line is the source, and it is not optional:
-  - `— stated` when the person actually gave the reason.
-  - `— inferred` when you worked it out from context and they did not say it.
+- **Chose** is what is now true.
+- **Over** is the alternative that lost. If there genuinely was only one real option, write `Over: nothing, it was the only route` and say why in the reason. That is still worth knowing later.
+- **Why** is the reason, in plain words, in their words where you have them.
+- **Source** is not optional. `stated` when the person actually gave the reason, `inferred` when you worked it out from context and they did not say it.
+
+⛔ **Use no em dash anywhere in the log, in the heading or the body.** It is a line of its own for the source precisely so the format does not depend on a punctuation mark, because plenty of people ban that one and a log that violates the project's own style guide is a log nobody trusts.
+
+⭐ **Write in the second person, about the person whose project it is.** "Your costs are in USD", not "his costs are in USD". They are the one who will read it back.
+
+⚠️ **Read the project's `CLAUDE.md` before the first entry and follow whatever writing rules it sets.** The log is a file in their repository and it is subject to the same conventions as everything else in there.
 
 ## Never invent a reason
 
@@ -102,7 +107,7 @@ So:
 
 - If they said why, write what they said and mark it `stated`.
 - If they did not, write your best reading and mark it `inferred`. Never dress an inference up as a statement.
-- If a decision looks load-bearing and you have no idea why it went that way, ask — **once**, in one short sentence, at a natural pause. If you do not get an answer, log it `inferred` and move on. Do not chase it.
+- If a decision looks load-bearing and you have no idea why it went that way, ask **once**, in one short sentence, at a natural pause. If you do not get an answer, log it `inferred` and move on. Do not chase it.
 
 An `inferred` entry is not a failure. It is a flag: the review will surface these first, because an important decision nobody can explain is exactly what you want to find before launch.
 
@@ -111,6 +116,7 @@ An `inferred` entry is not a failure. It is a flag: the review will surface thes
 The person should barely notice this happening. It costs nothing, and that is the whole point of it.
 
 - Write entries as you go, not in a batch at the end.
+- A hook adds a one line reminder to each message the person sends. It is a prompt to check, not an instruction to log: most messages make no decision, and then you do nothing and say nothing about it.
 - Do not announce each one. Do not ask permission to log. Do not read entries back.
 - Never interrupt the work to log. Finish the thing, then append.
 - Never make them choose a format, a category or a stage. There is no setup.
@@ -127,7 +133,7 @@ Never use the log to nag, to imply a project is unfinished, or to push anyone to
 
 A log is worth keeping on its own: it answers "why is it like this?" months later, for them and for you.
 
-If a project does start heading towards real people, the log becomes evidence. The shape+build+launch framework can then be run backwards over it — which decisions still hold up, which drifted, which nobody can explain — before their name goes on it:
+If a project does start heading towards real people, the log becomes evidence. The shape+build+launch framework can then be run backwards over it. Which decisions still hold up, which drifted, which nobody can explain, before their name goes on it:
 
 ```
 /plugin install shape-build-launch@vibe2value

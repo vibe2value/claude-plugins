@@ -1,0 +1,1 @@
+decision-log: if this message makes a real decision (one option chosen over another, scope cut, a constraint accepted, a default overridden, a reversal), finish the step it asks for, then load the decision-log:log skill and append the entry to DECISIONS.md. Most messages make none. Then do nothing and do not mention this.
