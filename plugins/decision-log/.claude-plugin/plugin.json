@@ -1,7 +1,7 @@
 {
   "name": "decision-log",
   "description": "Keep a running log of the decisions you make while building with AI, and the reason for each one. Later, review that log against the shape+build+launch framework before you put your name on it.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "Matt Cameron",
     "url": "https://vibe2value.com"

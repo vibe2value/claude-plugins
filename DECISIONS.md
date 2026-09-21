@@ -13,3 +13,9 @@ Why things in claude-plugins are the way they are, recorded as the work happened
 **Over:** the 1.0.3 format, with the source after an em dash at the end of the Why line
 **Why:** your writing rules ban the em dash, and a log that breaks the project's own style is a log nobody trusts
 **Source:** stated
+
+## 2026-09-21: decision-log 1.2.0 makes logging dependable, not hopeful
+**Chose:** four changes together: a "log it now" reminder, a Stop hook that holds a turn once when files changed but the log did not, the skill kept as /decision-log:log for asking directly, and a one line count so a quiet log looks different from a broken one
+**Over:** the 1.1.0 reminder alone, which in its first real session logged late, in batches, and only on the user's own messages
+**Why:** "the main thing is that it works so that the log can later be analysed - an empty log that the user thought would be populated is worse than useless"
+**Source:** stated

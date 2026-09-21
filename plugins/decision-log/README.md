@@ -21,7 +21,14 @@ Nothing. That is the feature.
 
 Once installed, decisions get appended to `DECISIONS.md` as they happen.
 
-**Why there is a hook.** A skill only runs when the AI notices it should, and in a long session it can simply not notice: a whole day of real decisions once went unlogged until the person asked where the log was. So the plugin carries one small hook. Each time you send a message it adds a short reminder to the AI's context: if this message makes a decision, log it once the step is done. It blocks nothing, asks you nothing and does not show up in the conversation. The text is in `hooks/reminder.txt`.
+**Why there are hooks.** A skill only runs when the AI notices it should. In its first real session, with no hook, a whole day of decisions went unlogged until the person asked where the log was. With only a reminder, entries arrived late, in batches, and never for decisions the AI made itself mid-task. So the plugin carries two small hooks:
+
+- **Each message you send** adds a one line reminder to the AI's context: if this settles a decision, log it now, before anything else.
+- **Each turn as it ends** gets a check. If the turn changed files and wrote nothing to `DECISIONS.md`, the AI is asked once whether a decision was settled. If one was, it logs it; if not, it stops. It never asks twice in a row.
+
+Neither blocks you, asks you anything or needs setting up. When something is logged you see one line, `decision-log: 1 logged this turn, 4 this session.`, so a log that is quiet because nothing was decided looks different from one that is broken. The end of turn check needs `python3`; without it the check is skipped and the reminder still works.
+
+**You can also ask for it.** `/decision-log:log` means "log this now", with or without words after it. It is the backup, not the main path.
 
 **There can be more than one log.** A `DECISIONS.md` can appear in any git repository you touch that is reachable from the directory you started Claude in, and nowhere else. Work in three repos in one session and you get three logs, one in each. That is the whole blast radius.
 
