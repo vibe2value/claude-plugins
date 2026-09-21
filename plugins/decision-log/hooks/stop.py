@@ -10,7 +10,9 @@ about to end, this looks at what the turn did:
   - anything else                                 -> say nothing
 
 The hold asks a question, it does not order a log: most turns that change files settle no
-decision, and then the AI stops. stop_hook_active stops it asking twice in a row.
+decision, and then the AI says so in one line. ⛔ Not "stop without comment": the first live test,
+21 Sep 2026, showed Claude Code rejects a silent reply after a hold and asks again for visible
+output. stop_hook_active stops it asking twice in a row.
 
 It never fails loudly. A transcript it cannot read, or no python, and the turn ends as normal:
 a broken safety net must not break the session.
@@ -30,7 +32,8 @@ HOLD = (
     "decision-log: this turn changed files and wrote nothing to DECISIONS.md. "
     "Did it settle a real decision (one option chosen over another, scope cut, a constraint "
     "accepted, a default overridden, a reversal), including one you made yourself while working? "
-    "If so, load the decision-log:log skill and append it now. If not, stop without comment."
+    "If so, load the decision-log:log skill and append it now. If not, reply with one short line "
+    "saying no decision was made this turn, and nothing else."
 )
 
 

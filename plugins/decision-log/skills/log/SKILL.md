@@ -117,7 +117,7 @@ The person should barely notice this happening. It costs nothing, and that is th
 
 - ⛔ **Log a decision as soon as it is settled, before the next piece of work.** Not at the end of the step, not in a batch. In the first real session "finish the thing, then append" became "append at the end", the end kept moving, and entries arrived late or only when the person asked where the log was. A session can end or be compacted at any point, and whatever was held back is lost.
 - **Decisions you make yourself count.** A format picked, a fallback chosen, a conflict resolved by a rule: if it could have gone another way and someone would later ask why, it goes in, marked `inferred` unless they gave the reason.
-- Two hooks keep this honest. One adds a reminder to each message the person sends. The other runs as a turn ends: if the turn changed files and wrote nothing here, it asks you once whether a decision was settled. Both are prompts to check, not instructions to log. Most turns settle nothing; then you stop and say nothing about it.
+- Two hooks keep this honest. One adds a reminder to each message the person sends. The other runs as a turn ends: if the turn changed files and wrote nothing here, it asks you once whether a decision was settled. Both are prompts to check, not instructions to log. Most turns settle nothing: after the end of turn check, say so in one short line and stop.
 - Do not announce each one. Do not ask permission to log. Do not read entries back.
 - Logging is a few seconds of appending, not an interruption. Do it, then carry on.
 - Never make them choose a format, a category or a stage. There is no setup.

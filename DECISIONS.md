@@ -19,3 +19,9 @@ Why things in claude-plugins are the way they are, recorded as the work happened
 **Over:** the 1.1.0 reminder alone, which in its first real session logged late, in batches, and only on the user's own messages
 **Why:** "the main thing is that it works so that the log can later be analysed - an empty log that the user thought would be populated is worse than useless"
 **Source:** stated
+
+## 2026-09-21: After a hold with no decision, the AI says so in one line
+**Chose:** the end of turn check asks for one short line, "no decision was made this turn"
+**Over:** "stop without comment", as 1.2.0 shipped
+**Why:** the first live test showed Claude Code rejects a silent reply after a hold and asks again for visible output
+**Source:** inferred
