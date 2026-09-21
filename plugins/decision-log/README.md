@@ -21,7 +21,9 @@ Nothing. That is the feature.
 
 Once installed, decisions get appended to `DECISIONS.md` as they happen:
 
-The file goes in the **nearest enclosing git repository** of whatever you are changing, so the log travels with the code rather than sitting in a folder above it. Work across two repos in one session and each gets its own.
+**There can be more than one log.** A `DECISIONS.md` can appear in any git repository you touch that is reachable from the directory you started Claude in, and nowhere else. Work in three repos in one session and you get three logs, one in each. That is the whole blast radius.
+
+It goes in the **nearest enclosing git repository** of whatever you are changing, because the log has to travel with the code: the repo is what gets cloned, reviewed and read by somebody else later. If the work is in a folder that is not a repo at all, it falls back to the directory you started in.
 
 When the file is first created you are told what has appeared, what will end up in it, and why it is scoped that way rather than to the folder you started Claude in. After that it says one line per session, the first time it writes, so you can tell a quiet session apart from one where nothing fired. It never asks you anything.
 

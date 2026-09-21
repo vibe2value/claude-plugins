@@ -30,9 +30,13 @@ The test: **could this have gone another way, and would someone later ask why it
 
 ## Where it goes
 
-`DECISIONS.md` at the project root.
+`DECISIONS.md` at the project root, **and there can be more than one of them.**
 
-**The project root is the nearest enclosing git repository of the files being changed.** Not the working directory, which is often a folder holding many projects. If a session touches more than one repository, each one gets its own log: a decision about a project is useless sitting in a folder above it, and the log has to travel with the code. Only when there is no repository anywhere above the work does the working directory apply.
+Say plainly what that means, because it is the one surprising thing about this skill: **a log can appear in any git repository you touch that is reachable from the directory Claude was started in, and nowhere else.** Work in three repositories in one session and you get three logs, one in each. That is the whole blast radius. Nothing is ever written outside the directory the session began in.
+
+**The project root is the nearest enclosing git repository of the files being changed**, not the working directory, which is often a folder holding many projects. The log has to travel with the code: a decision about a project is useless sitting in a folder above it, and it is the repository that gets cloned, reviewed and read by somebody else later.
+
+Only when there is no repository anywhere above the work does the working directory apply. In a folder of many projects, that makes the top level log the catch-all for whatever is not versioned, which is worth saying out loud when it happens.
 
 ⛔ Do not ask the person which project to use. Working it out is your job, and a question at the start of a session is a setup step wearing a disguise. If the answer is genuinely ambiguous, pick the nearest repository, say so in the notice below, and let them correct you.
 
@@ -42,7 +46,7 @@ Plain markdown on purpose: it diffs in git, greps from the terminal and reads wi
 
 ### Creating it, and saying what it covers
 
-On the first entry only, create the file with the heading and a one-line scope note, so anyone opening it in six months knows what it is:
+**Once per repository**, the first time you write to that one, create the file with the heading and a one-line scope note, so anyone opening it in six months knows what it is. A session working across three repositories does this three times, once each, as each log first appears:
 
 ```markdown
 # Decisions
@@ -62,7 +66,7 @@ If the repository is the directory they started in, the third line is noise. Lea
 
 ### Saying it again later
 
-When the file already exists and you append the first entry of a **new session**, say one line and nothing more:
+When a log already exists and you append the first entry of a **new session** to it, say one line and nothing more, naming the repository so it is obvious which of them you wrote to:
 
 > Logged to `api/DECISIONS.md`.
 
