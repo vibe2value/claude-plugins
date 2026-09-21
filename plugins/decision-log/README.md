@@ -21,7 +21,9 @@ Nothing. That is the feature.
 
 Once installed, decisions get appended to `DECISIONS.md` as they happen:
 
-The file goes in the **nearest enclosing git repository** of whatever you are changing, so the log travels with the code rather than sitting in a folder above it. Work across two repos in one session and each gets its own. You are told once, when the file is first created, where it is and what it covers. It never asks you anything.
+The file goes in the **nearest enclosing git repository** of whatever you are changing, so the log travels with the code rather than sitting in a folder above it. Work across two repos in one session and each gets its own.
+
+When the file is first created you are told what has appeared, what will end up in it, and why it is scoped that way rather than to the folder you started Claude in. After that it says one line per session, the first time it writes, so you can tell a quiet session apart from one where nothing fired. It never asks you anything.
 
 ```markdown
 ## 2026-09-21 — Deck keys use the Ghost member id

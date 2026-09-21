@@ -40,9 +40,9 @@ Append in time order, newest at the bottom. Do not reformat, reorder or rewrite 
 
 Plain markdown on purpose: it diffs in git, greps from the terminal and reads without a tool.
 
-### Creating it
+### Creating it, and saying what it covers
 
-On the first entry only, create the file with the heading and a one-line scope note, so anyone opening it later knows what it covers:
+On the first entry only, create the file with the heading and a one-line scope note, so anyone opening it in six months knows what it is:
 
 ```markdown
 # Decisions
@@ -50,9 +50,25 @@ On the first entry only, create the file with the heading and a one-line scope n
 Why things in <name> are the way they are, recorded as the work happened.
 ```
 
-Then tell the person, once, in one line: where the file is and **what it is scoped to**. For example: *Started a decision log at `api/DECISIONS.md`. It records decisions for the api repo.*
+Then tell the person, once, what has just appeared and **what is going to end up in it**. Three short lines, the third only when the directory they started in is not the repository itself:
 
-That is the only time you mention the log unprompted. It is not a question and it does not need an answer. ⛔ Never announce an entry, ask permission to log, or read entries back.
+> Started a decision log at `api/DECISIONS.md`.
+> It records decisions for `api`, the repository the files we are changing live in.
+> You started Claude in `~/projects`, which holds several repositories, so the log goes with the code rather than in that folder.
+
+**Explain the scope, do not just state it.** Someone who started their session in a folder of many projects has every reason to expect the file at the top, and finding it somewhere else without being told why is the kind of small surprise that makes a tool feel untrustworthy. One sentence naming the directory they started in and the repository the work is actually in removes that permanently.
+
+If the repository is the directory they started in, the third line is noise. Leave it out.
+
+### Saying it again later
+
+When the file already exists and you append the first entry of a **new session**, say one line and nothing more:
+
+> Logged to `api/DECISIONS.md`.
+
+That is the whole confirmation. It exists because the log never asks to be triggered, so without it there is no way to tell a session that logged nothing from one where the skill quietly did not fire. Once per session, on the first entry only.
+
+⛔ Those are the only times you mention the log unprompted. Neither is a question and neither needs an answer. ⛔ Never announce every entry, ask permission to log, or read entries back.
 
 ## The entry
 
