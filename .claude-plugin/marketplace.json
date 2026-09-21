@@ -6,9 +6,14 @@
   "description": "Claude plugins from vibe2value. Build with AI and trust what you make.",
   "plugins": [
     {
+      "name": "decision-log",
+      "source": "./plugins/decision-log",
+      "description": "Keep a running log of the decisions you make while building with AI, and the reason for each one. Zero setup: it records what you chose, what you chose it over and why, as it happens."
+    },
+    {
       "name": "shape-build-launch",
       "source": "./plugins/shape-build-launch",
-      "description": "Guide building software with AI through the shape+build+launch framework: make each decision sharp before writing code."
+      "description": "Guide building software with AI through the shape+build+launch framework: decide what to make (Shape), build it (Build), put it in front of people (Launch). Make each decision sharp before writing code, or run the framework backwards over a decision log of choices already made."
     }
   ]
 }

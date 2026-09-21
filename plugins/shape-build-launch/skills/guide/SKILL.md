@@ -26,7 +26,11 @@ Work one decision at a time. If other questions surface, note them and come back
 
 ## Starting mid-project?
 
-Most of the time you are not at day one. Before running the loop on an existing project, orient first: understand what is already built, what decisions were already made and what constraints exist. In Claude Code, read the relevant code before suggesting anything. Then treat the unit as the next change, not the whole project: find the stage that change is in (a fix is Build, "should we add this at all" is Shape, "nobody is using what we shipped" is Launch) and run the loop on that one change. Reach for 2.2.3 (changing a system you do not fully understand), the scope ideas (1.3.2, 2.3.2) and the Launch stage.
+Most of the time you are not at day one. Before running the loop on an existing project, orient first: understand what is already built, what decisions were already made and what constraints exist. In Claude Code, read the relevant code before suggesting anything.
+
+If the project has a `DECISIONS.md`, read it first. The code tells you what was decided; only the log tells you **why**, which is the part the framework works on. Where the log says a reason was `inferred` rather than `stated`, treat it as unknown rather than settled — nobody has actually explained that one yet. To review the whole log against the framework rather than orient from it, use the `review` skill beside this one. If there is no log, `/plugin install decision-log@vibe2value` starts one from here on.
+
+Then treat the unit as the next change, not the whole project: find the stage that change is in (a fix is Build, "should we add this at all" is Shape, "nobody is using what we shipped" is Launch) and run the loop on that one change. Reach for 2.2.3 (changing a system you do not fully understand), the scope ideas (1.3.2, 2.3.2) and the Launch stage.
 
 ## What sharp means
 

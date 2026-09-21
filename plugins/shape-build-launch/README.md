@@ -22,18 +22,35 @@ The skill runs a simple loop on whatever you are building:
 4. Only then build.
 5. Repeat for the next decision.
 
-## What is included
+## Running it backwards
 
-All 27 ideas and their exact Sharpen prompts are bundled with the skill, grouped by stage:
+The loop above runs forwards: sharpen the decision, then build. In practice almost nobody does that, because almost nobody stops to shape before they start building. They build, and only later start wondering whether the thing is real.
+
+The framework still applies at that point — the decisions are just already behind you. What it needs is a record of them:
 
 ```
-skills/guide/
-├── SKILL.md                 the loop, the Sharpen template, worked examples
-└── reference/
-    ├── shape.md             the 9 Shape ideas, each with its exact Sharpen prompt
-    ├── build.md             the 9 Build ideas
-    ├── launch.md            the 9 Launch ideas
-    └── manifest.json        source and a content hash per idea
+/shape-build-launch:review
+```
+
+This reads the `DECISIONS.md` written by the [decision-log](../decision-log) plugin and walks it against the framework: which decisions still hold up, which have drifted, and which nobody can explain. It hands back at most six findings, never a score, and closes on idea 3.3.3 — is this something you want to put your name on?
+
+It asks one question before it starts: is this going in front of other people with your name on it? If not, it stops. Not everything you vibe makes it to production, and that is the point.
+
+## What is included
+
+All 27 ideas and their exact Sharpen prompts are bundled with the guide skill, grouped by stage:
+
+```
+skills/
+├── guide/
+│   ├── SKILL.md             the loop, the Sharpen template, worked examples
+│   └── reference/
+│       ├── shape.md         the 9 Shape ideas, each with its exact Sharpen prompt
+│       ├── build.md         the 9 Build ideas
+│       ├── launch.md        the 9 Launch ideas
+│       └── manifest.json    source and a content hash per idea
+└── review/
+    └── SKILL.md             the framework run backwards over a decision log
 ```
 
 The reference files are generated from [vibe2value.com](https://vibe2value.com), the single source of truth, so the prompts here match what is published on the site. `manifest.json` records each idea's source slug, last-updated date and a content hash, so alignment can be checked rather than assumed.
