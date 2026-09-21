@@ -19,7 +19,9 @@ This runs underneath the work, not before it. There is no setup and nothing to r
 
 Nothing. That is the feature.
 
-Once installed, decisions get appended to `DECISIONS.md` at your project root as they happen:
+Once installed, decisions get appended to `DECISIONS.md` as they happen:
+
+The file goes in the **nearest enclosing git repository** of whatever you are changing, so the log travels with the code rather than sitting in a folder above it. Work across two repos in one session and each gets its own. You are told once, when the file is first created, where it is and what it covers. It never asks you anything.
 
 ```markdown
 ## 2026-09-21 — Deck keys use the Ghost member id

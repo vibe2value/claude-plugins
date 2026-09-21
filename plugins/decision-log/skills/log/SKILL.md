@@ -30,9 +30,29 @@ The test: **could this have gone another way, and would someone later ask why it
 
 ## Where it goes
 
-`DECISIONS.md` at the project root. Create it on the first entry with the heading `# Decisions` and nothing else. Append in time order, newest at the bottom. Do not reformat, reorder or rewrite earlier entries — this is a log, not a document.
+`DECISIONS.md` at the project root.
+
+**The project root is the nearest enclosing git repository of the files being changed.** Not the working directory, which is often a folder holding many projects. If a session touches more than one repository, each one gets its own log: a decision about a project is useless sitting in a folder above it, and the log has to travel with the code. Only when there is no repository anywhere above the work does the working directory apply.
+
+⛔ Do not ask the person which project to use. Working it out is your job, and a question at the start of a session is a setup step wearing a disguise. If the answer is genuinely ambiguous, pick the nearest repository, say so in the notice below, and let them correct you.
+
+Append in time order, newest at the bottom. Do not reformat, reorder or rewrite earlier entries — this is a log, not a document.
 
 Plain markdown on purpose: it diffs in git, greps from the terminal and reads without a tool.
+
+### Creating it
+
+On the first entry only, create the file with the heading and a one-line scope note, so anyone opening it later knows what it covers:
+
+```markdown
+# Decisions
+
+Why things in <name> are the way they are, recorded as the work happened.
+```
+
+Then tell the person, once, in one line: where the file is and **what it is scoped to**. For example: *Started a decision log at `api/DECISIONS.md`. It records decisions for the api repo.*
+
+That is the only time you mention the log unprompted. It is not a question and it does not need an answer. ⛔ Never announce an entry, ask permission to log, or read entries back.
 
 ## The entry
 
